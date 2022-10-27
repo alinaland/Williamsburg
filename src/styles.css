@@ -1,4 +1,68 @@
-h1 {
-  font-size: 96px;
+body {
+  background-color: ghostwhite;
   font-family: "Montserrat", sans-serif;
+}
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 72px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 46px;
+  font-weight: 500;
+}
+header {
+  background-image: linear-gradient(
+      rgba(25, 25, 112, 0.3),
+      rgba(25, 25, 112, 0.3)
+    ),
+    url("/images/loft.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: ghostwhite;
+  text-align: center;
+  padding: 360px 0;
+}
+header h1 {
+  line-height: 1;
+  margin: 30px 0;
+}
+header h2 {
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 32px;
+}
+header a {
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 16px 32px;
+  margin-top: 32px;
+  font-weight: 700;
+  color: #0c0c27;
+  background-color: ghostwhite;
+}
+footer {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header a {
+    font-size: 9px;
+    padding: 10px 18px;
+  }
 }
