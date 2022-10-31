@@ -9,8 +9,18 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+
   grid-gap: 64px;
+}
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.img-responsive {
+  max-width: 100%;
 }
 h1 {
   font-size: 72px;
@@ -53,6 +63,22 @@ header a {
   color: #0c0c27;
   background-color: ghostwhite;
 }
+
+main {
+  background-color: ghostwhite;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+  color: #0c0c27;
+  margin: 0;
+}
+main p {
+  font-size: 16px;
+  line-height: 30px;
+}
 footer {
   font-family: "Montserrat", sans-serif;
   color: ghostwhite;
@@ -64,6 +90,7 @@ footer {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px;
 }
 footer h3 {
   font-weight: 700;
@@ -106,5 +133,13 @@ footer a {
   header a {
     font-size: 9px;
     padding: 10px 18px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
