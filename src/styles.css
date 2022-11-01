@@ -13,16 +13,13 @@ body {
   grid-gap: 64px;
 }
 .grid-2-columns {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 .grid-3-columns {
   grid-template-columns: 1fr 2fr 2fr;
 }
-.grid-3-columns-instagram {
+.grid-3-columns-even {
   grid-template-columns: 1fr 1fr 1fr;
-}
-.grid-4-columns {
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .img-responsive {
@@ -135,7 +132,9 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
-
+.secondary h2 {
+  font-size: 32px;
+}
 .text-center {
   text-align: center;
 }
@@ -167,12 +166,7 @@ footer a {
   color: ghostwhite;
   opacity: 0.7;
 }
-@media (max-width: 1430px) {
-  .grid-4-columns {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-}
+
 @media (max-width: 960px) {
   header {
     padding: 60px 0;
